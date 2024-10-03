@@ -1,0 +1,345 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+    background-color: rgb(132, 184, 226);
+}
+
+
+
+/* navbar */
+.header{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.3rem 10%;
+    background-color: #f0a500;
+    z-index: 1;
+}
+
+.logo img{
+    width: 60px;
+    height: auto;
+}
+
+#check{
+    display: none;
+}
+.icon{
+    font-size: 2.4rem;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    position: absolute;
+    right: 5%;
+    cursor: pointer;
+    display: none;
+}
+.navbar a{
+    font-size: 1.15rem;
+    color:rgb(132, 184, 226);
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 2.5rem;
+    font-family: "Oswald", system-ui;
+}
+
+.navbar a:hover{
+    color:  rgb(205, 50, 50);
+}
+
+
+.searchbar{
+    display: flex;
+    align-items: center;
+}
+.searchbar{
+    padding: 5px;
+    border: none;
+    border-radius: 100px;
+    background-color: rgb(255, 255, 255);
+    color: white;
+}
+
+
+
+/* homepage */
+.heading{
+    color: rgb(205, 50, 50);
+    text-align: center;
+    padding-top: 90px;
+    font-size: 30px;
+}
+.newcard{
+    display: flex; 
+    justify-content: center; 
+    padding: 20px;
+}
+/* Individual card styling */
+.card1{
+    background-color: rgba(251, 250, 250, 0);
+    border-radius: 8px;
+    width: 48%; 
+    text-align: center;
+    margin: 10px;
+}
+.card1 img{
+    width: 90%;               
+    height: 400px;             
+    object-fit: cover;          
+    object-position: center; 
+    margin-top: 10px; 
+    border-radius: 10px; 
+}
+.card1 p{
+    padding: 100px 10px;
+    line-height: 30px;
+    font-weight: bold;
+    font-style: oblique;
+}
+
+
+
+/* top rated */
+.topcard{
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+    padding: 20px;
+}
+.card2 {
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 8px;
+    text-align: center;
+}
+.card2 img {
+    width: 100%;               
+    height: 400px;             
+    object-fit: cover;         
+    object-position: center;    
+}
+.cardcontent2 {
+    padding: 15px;
+    color: rgb(0, 0, 0);
+}
+.cardcontent2 h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.cardcontent2 p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+.cardcontent2 button {
+    background-color: #f0a500;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.cardcontent2 button:hover {
+    background-color: green; 
+}
+
+
+/* free games */
+.freecard{
+    display: grid; 
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px; 
+    padding: 20px;
+}
+.card3{
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 8px;
+    text-align: center;
+}
+.card3 img{
+    width: 100%;               
+    height: 400px;             
+    object-fit: cover;          
+    object-position: center;    
+}
+.cardcontent3{
+    padding: 15px;
+    color: rgb(0, 0, 0);
+}
+
+.cardcontent3 h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.cardcontent3 p{
+    font-size: 14px;
+    margin-bottom: 15px;
+    font-family: "Lora", system-ui;
+}
+.cardcontent3 button{
+    background-color: #f0a500;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.cardcontent3 button:hover{
+    background-color:green; 
+}
+
+
+
+/* upcoming games */
+.upcomingcard{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
+    padding: 20px;
+}
+.card4{
+    background-color: rgb(0, 0, 0);
+    border-radius: 8px;
+    text-align: center;
+}
+.card4 img{
+    width: 100%;               
+    height: 400px;             
+    object-fit: cover;         
+    object-position: center;   
+}    
+.cardcontent4{
+    padding: 15px;
+    color: white;
+}
+.cardcontent4 h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.cardcontent4 p{
+    font-size: 14px;
+    margin-bottom: 15px;
+    font-family: "Lora", system-ui;
+}
+.cardcontent4 button{
+    background-color: #f0a500;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.cardcontent4 button:hover{
+    background-color:green; 
+}
+
+
+
+/* footer */
+footer{
+    background-color: #f0a500;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+} 
+.footerbox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.logo img{
+    width: 60px;
+    height: auto;
+}
+.footerlinks ul{
+    list-style: none;
+    padding: 0;
+}
+.footerlinks ul li{
+    display: inline;
+    margin: 0 15px;
+    
+}
+.footerlinks ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 500;
+}
+.footerlinks ul li a:hover{
+color: rgb(205, 50, 50);
+} 
+    
+
+/* media query */
+@media(max-width:992px) and (min-width:760px){
+    .navbar{
+        padding: 1.3rem 5%;
+    } 
+    .newcard{
+        flex-wrap: wrap;
+    }
+    .topcard{
+        flex-wrap: wrap;
+    }
+    .freecard{
+        flex-wrap: wrap;
+    }
+    .upcomingcard{
+        flex-wrap: wrap;
+    }
+}
+@media(max-width:760px){
+    .icon{
+        display: flex;
+        background-color: #f0a500;
+    }
+    .icon{
+        display: flex;
+    }
+    #closeicon{
+        display: none;
+    }
+    #check:checked~.icon #menuicon{
+        display: none;        
+    }
+    #check:checked~.icon #closeicon{
+        display: block;        
+    }
+    #check:checked~.navbar{
+        display: block;        
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #f0a500;
+        display: none;
+    }
+    .navbar a{
+        display: block;
+        text-align: center;
+        font-size: 1.1rem;
+        margin: 1.5rem 0px;
+    }
+
+    .newcard{
+        flex-wrap: wrap;
+    }
+    .topcard{
+        flex-wrap: wrap;
+    }
+    .freecard{
+        flex-wrap: wrap;
+    }
+    .upcomingcard{
+        flex-wrap: wrap;
+    }
+}
